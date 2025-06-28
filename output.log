@@ -1,0 +1,116 @@
+🔧 DEBUG: Loading contentGenerator.ts
+(node:15726) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:15726) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+]2; Gemini - openCLI 
+  █████╗  ██████╗ ██████╗███████╗██╗     ███████╗██████╗  █████╗ ████████╗███████╗
+ ██╔══██╗██╔════╝██╔════╝██╔════╝██║     ██╔════╝██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
+ ███████║██║     ██║     █████╗  ██║     █████╗  ██████╔╝███████║   ██║   █████╗
+ ██╔══██║██║     ██║     ██╔══╝  ██║     ██╔══╝  ██╔══██╗██╔══██║   ██║   ██╔══╝
+ ██║  ██║╚██████╗╚██████╗███████╗███████╗███████╗██║  ██║██║  ██║   ██║   ███████╗
+ ╚═╝  ╚═╝ ╚═════╝ ╚═════╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝
+
+
+Tips for getting started:
+1. Ask questions, edit files, or run commands.
+2. Be specific for the best results.
+3. /help for more information.
+
+
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ >   Type your message or @path/to/file                               │
+╰──────────────────────────────────────────────────────────────────────╯
+
+~/Desktop/gemma3n/ono sandbox (see   qwen3-30b-a3b-dwq-05082025 (100%
+penCLI             /docs)           context left)
+
+[?2004h[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G🔧 DEBUG: effectiveModel=qwen3-30b-a3b-dwq-05082025, isLocalModel=true, authType=oauth-personal
+
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ >   Type your message or @path/to/file                               │
+╰──────────────────────────────────────────────────────────────────────╯
+
+~/Desktop/gemma3n/ono sandbox (see   qwen3-30b-a3b-dwq-05082025 (100%
+penCLI             /docs)           context left)
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G🔧 DEBUG: Setting authType to USE_LOCAL_MODEL
+
+
+╭──────────────────────────────────────────────────────────────────────╮
+│ >   Type your message or @path/to/file                               │
+╰──────────────────────────────────────────────────────────────────────╯
+
+~/Desktop/gemma3n/ono sandbox (see   qwen3-30b-a3b-dwq-05082025 (100%
+penCLI             /docs)           context left)
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+
+
+
+█
+█
+█
+█
+█
+Tips for getting started:
+1. Ask questions, edit files, or run commands.
+2. Be specific for the best results.
+3. /help for more information.
+█
+
+  ERROR  setRawMode ENOTTY
+
+ node:tty:81:24
+
+ - ReadStream.setRawMode (node:tty:81:24)
+ - handleSetRawMode (bundle/opencli.js:178397:15)
+ -  (bundle/opencli.js:179061:5)
+ - commitHookEffectListMount (bundle/opencli.js:18339:34)
+ - commitPassiveMountOnFiber (bundle/opencli.js:19630:17)
+ - commitPassiveMountEffects_complete (bundle/opencli.js:19598:17)
+ - commitPassiveMountEffects_begin (bundle/opencli.js:19588:15)
+ - commitPassiveMountEffects (bundle/opencli.js:19578:11)
+ - flushPassiveEffectsImpl (bundle/opencli.js:21323:11)
+ - flushPassiveEffects (bundle/opencli.js:21280:22)
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+
+
+
+█
+█
+█
+█
+█
+Tips for getting started:
+1. Ask questions, edit files, or run commands.
+2. Be specific for the best results.
+3. /help for more information.
+█
+
+  ERROR  setRawMode ENOTTY
+
+ node:tty:81:24
+
+ - ReadStream.setRawMode (node:tty:81:24)
+ - handleSetRawMode (bundle/opencli.js:178397:15)
+ -  (bundle/opencli.js:179061:5)
+ - commitHookEffectListMount (bundle/opencli.js:18339:34)
+ - commitPassiveMountOnFiber (bundle/opencli.js:19630:17)
+ - commitPassiveMountEffects_complete (bundle/opencli.js:19598:17)
+ - commitPassiveMountEffects_begin (bundle/opencli.js:19588:15)
+ - commitPassiveMountEffects (bundle/opencli.js:19578:11)
+ - flushPassiveEffectsImpl (bundle/opencli.js:21323:11)
+ - flushPassiveEffects (bundle/opencli.js:21280:22)
+
+The above error occurred in the <App2> component:
+
+    at App2 (file:///Users/abhijitbhattacharya/Desktop/gemma3n/openCLI/bundle/opencli.js:256633:23)
+    at SessionStatsProvider (file:///Users/abhijitbhattacharya/Desktop/gemma3n/openCLI/bundle/opencli.js:227934:3)
+    at AppWrapper
+    at App (file:///Users/abhijitbhattacharya/Desktop/gemma3n/openCLI/bundle/opencli.js:178287:11)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, InternalApp.
+[?2004l🔧 CREATING LOCAL CONTENT GENERATOR 🔧

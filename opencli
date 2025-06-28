@@ -1,0 +1,39 @@
+#!/bin/bash
+# openCLI - Local AI CLI powered by Qwen3-30B-A3B
+# Usage: ./opencli [options] [prompt]
+
+# Find the absolute path of the script, resolving any symlinks
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+SCRIPT_DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
+
+OPENCLI_PATH="$SCRIPT_DIR/bundle/opencli.js"
+
+if [ ! -f "$OPENCLI_PATH" ]; then
+    echo "Error: opencli.js not found at $OPENCLI_PATH"
+    echo "Please run 'npm run build && npm run bundle' in the project directory"
+    exit 1
+fi
+
+# Check if LM Studio is running (optional, provides a warning)
+if ! curl -s "http://127.0.0.1:1234/v1/models" > /dev/null 2>&1; then
+    echo "⚠️  Warning: Cannot connect to LM Studio at http://127.0.0.1:1234"
+    echo "   Please ensure LM Studio is running with a model loaded."
+    echo "   Continuing anyway..."
+    echo ""
+fi
+
+# Capture the user's original working directory before changing to script directory
+USER_CWD="$(pwd)"
+
+# Run openCLI, passing all arguments through, and ensuring it runs from its own directory
+# This ensures that all relative paths within the nodejs app work correctly.
+cd "$SCRIPT_DIR" || exit
+
+# Pass the user's original working directory as an environment variable
+export OPENCLI_USER_CWD="$USER_CWD"
+exec node "$OPENCLI_PATH" "$@" 
